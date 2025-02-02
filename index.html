@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Remove image backgrounds instantly with AI technology. Clean, fast & easy to use.">
+    <title>AI Background Remover</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center> 
+        <h1>Instant AI Background Removal</h1>
+        <p>Upload your image, and let AI remove the background for you in seconds!</p>
+        <br>
+        <section class="upload-container">
+            <div class="upload-box" id="uploadBox">
+                <button class="upload-btn" onclick="triggerUpload()">Upload Image</button>
+                <input type="file" id="imageInput" accept="image/*" hidden>
+            </div>
+        </section>
+    </center>
+
+    <div id="loading">
+        <div class="loader"></div>
+        <p>Processing...</p>
+    </div>
+
+    <section id="preview-section">
+        <div class="image-box">
+            <h2>Original Image</h2>
+            <img id="original-image" src="" alt="Original">
+        </div>
+        <div class="image-box">
+            <h2>Background Removed</h2>
+            <img id="preview" src="" alt="Processed">
+        </div>
+        <a id="download-btn" download>Download Image</a>
+    </section>
+
+    <footer>
+        <p>© 2025 Background Remover</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
